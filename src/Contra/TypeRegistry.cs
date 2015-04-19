@@ -35,6 +35,11 @@ namespace Contra
             return _inverse[value];
         }
 
+        public TypeMapping<T>[] GetRegisteredMappings()
+        {
+            return _mappings.ToArray();
+        } 
+
         private List<TypeMapping<T>> getListFor(T key)
         {
             if (!_inverse.ContainsKey(key))

@@ -1,3 +1,6 @@
+#### 0.0.1-alpha7 - April 19 2015
+* Added GetRegisteredMappings to TypeRegistry
+
 #### 0.0.1-alpha6 - April 19 2015
 * NuGet (expecting it to work now)
 
