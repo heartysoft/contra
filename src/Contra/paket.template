@@ -1,22 +1,22 @@
 type project
 owners
-    ##Author##
+    ashic
 authors 
-    ##Author##
+    ashic
 projectUrl
-    http://github.com/##GitHome##/contra
+    http://github.com/heartysoft/contra
 iconUrl
-    https://raw.githubusercontent.com/##GitHome##/contra/master/docs/files/img/logo.png
+    https://raw.githubusercontent.com/heartysoft/contra/master/docs/files/img/logo.png
 licenseUrl
-    http://github.com/##GitHome##/contra/blob/master/LICENSE.txt
+    http://github.com/heartysoft/contra/blob/master/LICENSE.txt
 requireLicenseAcceptance
     false
 copyright
     Copyright 2015
 tags
-    ##Tags##
+    contravariance messaging
 summary
-    ##Summary##
+    A type registry allowing lookups that honour contravariance.
 description
-    ##Description##
+    Useful for mapping types to other things. For example, types to strings, types to Action<object>, Envelope<Message> to Action<object>, etc.
 
