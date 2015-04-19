@@ -1,3 +1,6 @@
+#### 0.0.1-alpha6 - April 19 2015
+* NuGet (expecting it to work now)
+
 #### 0.0.1-alpha5 - April 19 2015
 * Trying NuGet (and again)
 
