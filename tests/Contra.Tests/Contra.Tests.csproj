@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InverseLookupTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\CancelledEvent.cs" />
+    <Compile Include="Support\CriminalRegisteredEvent.cs" />
+    <Compile Include="Support\Envelope.cs" />
+    <Compile Include="Support\MessageEnvelope.cs" />
+    <Compile Include="Support\PersonRegisteredEvent.cs" />
+    <Compile Include="Support\RegisteredEvent.cs" />
+    <Compile Include="TypeRegistryTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -56,4 +64,11 @@
       <Paket>True</Paket>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Contra\Contra.csproj">
+      <Project>{F808B707-DA84-451A-988D-FAC0C86525D1}</Project>
+      <Name>Contra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
 </Project>
