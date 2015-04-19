@@ -1,3 +1,6 @@
+#### 0.0.1-alpha4 - April 19 2015
+* Trying NuGet (again)
+
 #### 0.0.1-alpha3 - April 19 2015
 * Trying NuGet
 
