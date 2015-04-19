@@ -12,4 +12,4 @@ if errorlevel 1 (
   exit /b %errorlevel%
 )
 
-packages\FAKE\tools\FAKE.exe build.fsx "target=Release" "github-user=%1"  "github-pw=%2"
+packages\FAKE\tools\FAKE.exe build.fsx "target=Release" NugetKey=%3 "github-user=%1"  "github-pw=%2"
