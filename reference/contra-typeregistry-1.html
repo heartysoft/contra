@@ -84,10 +84,10 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
-            GetValuesFor(key)
+            GetRegisteredMappings()
           </code>
           <div class="tip" id="8">
-            <strong>Signature:</strong> key:obj -&gt; IEnumerable&lt;TypeMapping&lt;&#39;T&gt;&gt;<br />
+            <strong>Signature:</strong> unit -&gt; TypeMapping&lt;&#39;T&gt; []<br />
                       </div>
         </td>
         <td class="xmldoc">
@@ -98,9 +98,23 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
-            Register(value)
+            GetValuesFor(key)
           </code>
           <div class="tip" id="9">
+            <strong>Signature:</strong> key:obj -&gt; IEnumerable&lt;TypeMapping&lt;&#39;T&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            Register(value)
+          </code>
+          <div class="tip" id="10">
             <strong>Signature:</strong> value:&#39;T -&gt; TypeRegistry&lt;&#39;T&gt;<br />
                       </div>
         </td>
