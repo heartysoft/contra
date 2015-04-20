@@ -1,3 +1,6 @@
+#### 0.0.1-beta - April 19 2015
+* Nuget versioning fix.
+
 #### 0.0.1-alpha10 - April 19 2015
 * bugfix: Generic type argument checking was the wrong way round.
 
