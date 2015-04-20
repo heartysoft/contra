@@ -12,7 +12,12 @@ namespace Contra
 
         public TypeRegistry<T> Register<T1>(T value)
         {
-            var typeMapping = new TypeMapping<T>(typeof(T1), value);
+            return Register(typeof(T1), value);
+        }
+
+        public TypeRegistry<T> Register(Type t, T value)
+        {
+            var typeMapping = new TypeMapping<T>(t, value);
 
             _mappings.Add(typeMapping);
 

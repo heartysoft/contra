@@ -1,3 +1,6 @@
+#### 0.0.1-alpha8 - April 19 2015
+* Added non-generic overload to Register.
+
 #### 0.0.1-alpha7 - April 19 2015
 * Added GetRegisteredMappings to TypeRegistry
 
