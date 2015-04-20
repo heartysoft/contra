@@ -9,4 +9,16 @@ namespace Contra.Tests.Support
     {
         T Message { get; }
     }
+
+    public class ConcreteEnvelope<T> : Envelope
+    {
+        public T Message { get; private set; }
+
+        public object UntypedMessage { get; set; }
+
+        public ConcreteEnvelope(T message)
+        {
+            Message = message;
+        }
+    }
 }

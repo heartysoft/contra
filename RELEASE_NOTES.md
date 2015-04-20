@@ -1,3 +1,6 @@
+#### 0.0.1-alpha9 - April 19 2015
+* bugfix: concrete generic envelopes don't blow up on different types.
+
 #### 0.0.1-alpha8 - April 19 2015
 * Added non-generic overload to Register.
 

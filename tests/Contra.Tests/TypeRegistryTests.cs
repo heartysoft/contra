@@ -228,6 +228,21 @@ namespace Contra.Tests
             Assert.True(handled);
         }
 
+        [Test]
+        public void should_handle_for_generic_concrete_envelop()
+        {
+            var handled1 = false;
+            var handled2 = false;
+
+            _registry.Register<ConcreteEnvelope<PersonRegisteredEvent>>(x => handled1 = true);
+            _registry.Register<ConcreteEnvelope<CancelledEvent>>(x => handled2 = true);
+
+            execute(new ConcreteEnvelope<PersonRegisteredEvent>(new PersonRegisteredEvent("john")));
+
+            Assert.IsTrue(handled1);
+            Assert.IsFalse(handled2);
+        }
+
         private void execute(object message)
         {
             var handlers = _registry.GetValuesFor(message);

@@ -30,8 +30,8 @@ namespace Contra
 
             if (target.GetGenericTypeDefinition().IsAssignableFrom(msg.GetGenericTypeDefinition()) == false) return false;
 
-            var targetTypeParams = target.GetGenericParameterConstraints();
-            var msgTypeParams = msg.GetGenericParameterConstraints();
+            var targetTypeParams = target.GetGenericArguments();
+            var msgTypeParams = msg.GetGenericArguments();
 
             if (targetTypeParams.Length != msgTypeParams.Length) return false;
 
