@@ -1,3 +1,6 @@
+#### 0.0.1-alpha10 - April 19 2015
+* bugfix: Generic type argument checking was the wrong way round.
+
 #### 0.0.1-alpha9 - April 19 2015
 * bugfix: concrete generic envelopes don't blow up on different types.
 

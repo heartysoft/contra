@@ -37,7 +37,7 @@ namespace Contra
 
             for (int i = 0; i < targetTypeParams.Length; i++)
             {
-                if (!recMatches(targetTypeParams[i], msgTypeParams[i])) return false;
+                if (!recMatches(msgTypeParams[i], targetTypeParams[i])) return false;
             }
 
             return true;

@@ -243,6 +243,18 @@ namespace Contra.Tests
             Assert.IsFalse(handled2);
         }
 
+        [Test]
+        public void should_handle_for_concrete_envelope_of_interface_of_message()
+        {
+            var handled = false;
+
+            _registry.Register<ConcreteEnvelope<RegisteredEvent>>(x => handled = true);
+
+            execute(new ConcreteEnvelope<PersonRegisteredEvent>(new PersonRegisteredEvent("john")));
+
+            Assert.IsTrue(handled);
+        }
+
         private void execute(object message)
         {
             var handlers = _registry.GetValuesFor(message);
